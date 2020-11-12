@@ -2,19 +2,29 @@
     flex: 1;
     background: none;
     border: 1px solid #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
+    background: rgb(255, 255, 255); 
+}
+
+.button-top-2{
+    flex: 1;
+    background: none;
+    border: 1px solid  rgb(149, 198, 224);
+    font-size: 16px;
+    width: 100%;
+    background:  rgb(149, 198, 224);
 }
 
 .link-first{
     flex: 12;
     text-decoration: none;
     border: 1px solid #ffffff;
-    font-size: 24px;
+    font-size: 22px;
     width: 100%;
     background: rgb(255, 255, 255);
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     transition: 0.5s;
     overflow: hidden;
 }
@@ -23,12 +33,12 @@
     flex: 12;
     text-decoration: none;
     border: 1px solid #ffffff;
-    font-size: 24px;
+    font-size: 22px;
     width: 100%;
     background: rgb(255, 255, 255);
-    padding-top: 14px;
-    padding-bottom: 14px;
-    margin-top: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 40px;
     transition: 0.5s;
     overflow: hidden;
 }

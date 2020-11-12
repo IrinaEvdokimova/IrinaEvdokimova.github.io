@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\Ирина\\Desktop\\Липовка\\Новая папка\\Evdokimova_prooved\\IrinaEvdokimova.github.io.git\\index.html"
+            "file": "index.html"
         }
     ]
 }

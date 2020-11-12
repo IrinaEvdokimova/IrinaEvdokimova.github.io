@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Памагити</title>
   <link rel="stylesheet" href="css/home-style.css">
   <link rel="stylesheet" href="css/button-style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
@@ -21,8 +21,8 @@
   <div class = "box-top"></div>
   <div class = "search-container">
     <input class = "search-bar" type="text" result = "result">
-    <button class = "button-top">Search</button>
-    <button class = "button-top">Sign in</button>
+    <button class = "button-top-2">Найти</button>
+    <button class = "button-top">Войти</button>
   </div>
   
   <div>
@@ -30,23 +30,28 @@
       <div class = "buttons-layout">
         <div class = "button-row">
           <div class = "square-top"></div>
-          <button class = "link-first" value = "https://stackoverflow.com" onclick="openPage(value)"><a href="#">О городе</a></button>
+          <div class = "images-1"></div>
+          <button class = "link-first" value = "http://www.admkrsk.ru/city/Pages/default.aspx" onclick="openPage(value)"><a href="#">О городе</a></button>
         </div>
         <div class = "button-row"> 
           <div class = "square"></div>
-          <button class = "link"><a href="#">Новости</a></button>
+          <div class = "images-2"></div>
+          <button class = "link" value = "https://newslab.ru/" onclick="openPage(value)"><a href="#">Новости</a></button>
         </div>
         <div class = "button-row">
           <div class = "square"></div>
-          <button class = "link"><a href="#">Фотогалерея</a></button>
+          <div class = "images-3"></div>
+          <button class = "link" value = "http://www.admkrsk.ru/photoarchive/Pages/default.aspx" onclick="openPage(value)"><a href="#">Фотогалерея</a></button>
         </div>
         <div class = "button-row">
           <div class = "square"></div>
-          <button class = "link"><a href="#">Документы</a></button>
+          <div class = "images-4"></div>
+          <button class = "link value" value = "http://www.admkrsk.ru/citytoday/building/Pages/default.aspx" onclick="openPage(value)"><a href="#">Документы</a></button>
         </div>
         <div class = "button-row">
           <div class = "square"></div>
-          <button class = "link"><a href="#">Реестр домов</a></button>
+          <div class = "images-5"></div>
+          <button class = "link" value = "https://www.reformagkh.ru/opendata?gid=2211647&cids=house_management&page=1&pageSize=10" onclick="openPage(value)"><a href="#">Реестр домов</a></button>
         </div>
       </div>
 
@@ -71,14 +76,14 @@
       <p>Разделы</p>
       <div class="bottom-paragraph">
         <div class="row">
-          <div class = "bot-link"><a href="https://www.youtube.com/watch?v=aR-KAldshAE" target="_blank">О городе</a></div>
-          <div class = "bot-link2"><a href="https://www.youtube.com/watch?v=aR-KAldshAE" target="_blank">Интерактивная карта</a></div>
-          <div class = "bot-link"><a href="https://www.youtube.com/watch?v=aR-KAldshAE" target="_blank">Новости</a></div>
+          <div class = "bot-link"><a href="http://www.admkrsk.ru/city/Pages/default.aspx" target="_blank">О городе</a></div>
+          <div class = "bot-link2"><a href="https://newslab.ru/" target="_blank">Новости</a></div>
+          <div class = "bot-link"><a href="http://www.admkrsk.ru/photoarchive/Pages/default.aspx" target="_blank">Фотогалерея</a></div>
         </div>
         <div class="row">
-          <div class = "bot-link"><a href="https://www.youtube.com/watch?v=aR-KAldshAE" target="_blank">Фотогалерея</a></div>
-          <div class = "bot-link2"><a href="https://www.youtube.com/watch?v=aR-KAldshAE" target="_blank">Реестр домов</a></div>
-          <div class = "bot-link2"><a href="https://www.youtube.com/watch?v=aR-KAldshAE" target="_blank">Документы</a></div>
+          <div class = "bot-link"><a href="https://www.youtube.com/watch?v=aR-KAldshAE" target="_blank">Интерактивная карта</a></div>
+          <div class = "bot-link2"><a href="http://www.admkrsk.ru/citytoday/building/Pages/default.aspx" target="_blank">Реестр домов</a></div>
+          <div class = "bot-link2"><a href="https://www.reformagkh.ru/opendata?gid=2211647&cids=house_management&page=1&pageSize=10" target="_blank">Документы</a></div>
         </div>
       </div>
       
