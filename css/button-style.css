@@ -27,6 +27,7 @@
     padding-bottom: 15px;
     transition: 0.5s;
     overflow: hidden;
+    text-align: left;
 }
 
 .link{
@@ -41,6 +42,7 @@
     margin-top: 40px;
     transition: 0.5s;
     overflow: hidden;
+    text-align: left;
 }
 
 .link:focus,.link-first:focus {
