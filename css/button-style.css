@@ -1,0 +1,78 @@
+.button-top{
+    flex: 1;
+    background: none;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    width: 100%;
+}
+
+.link-first{
+    flex: 12;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    font-size: 32px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.link{
+    flex: 12;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    font-size: 32px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 48px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.link:focus,.link-first:focus {
+    outline: none;
+}
+
+.link::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 5%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: .5;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.link::after{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 5%;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) scaleX(-15deg);
+}
+
+.link:hover, .link-first:hover{
+    cursor: pointer;
+}
+
+.link:hover:before{
+    transform: translateX(100%) skewX(-15deg);
+    opacity: .6;
+    transition: 0.5s;
+}
+
+.link:hover:after{
+    transform: translateX(100%) skewX(-15deg);
+    opacity: 1;
+    transition: 0.5s;
+}
