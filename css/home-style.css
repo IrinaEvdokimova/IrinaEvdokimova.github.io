@@ -15,8 +15,7 @@ body{
 }
 
 .transp-back{
-    border: solid;
-    width: 50%;
+    width: 45%;
     padding-bottom: 1%;
     background: linear-gradient(90deg,rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%);
     display: flex;
@@ -25,13 +24,13 @@ body{
 
 
 .image-kras{
-    width: 7%;
+    width: 8%;
     background-image: url(images/home_page/Krasnoyarsk.png);
     background-size: 100%;
     padding-bottom: 9.5%;
     margin-top: 10px;
     margin-left: 50px;
-    margin-right: 5%;
+    margin-right: 7%;
 }
 
 .top-text1{
@@ -70,9 +69,9 @@ a{
 
 .map-button{
     width: 100%;
-    padding-bottom: 413px;
+    padding-bottom: 380px;
     padding-top: 17px;
-    background: url(images/home_page/karta.jpg);
+    background: url(images/home_page/karta3.jpg);
     background-size: 100%;
 }
 
@@ -81,13 +80,13 @@ a{
 }
 
 .buttons-layout{
-    flex: 2;
+    flex: 1.2;
     box-sizing: border-box;
     width: 100%;
 }
 
 .info-text-layout{
-    flex: 1.5;
+    flex: 1;
     margin-right: 2%;
     box-sizing: border-box;
     width: 100%;
@@ -104,44 +103,44 @@ a{
 }
 
 .square{
-    flex: 2;
+    flex: 3;
     background: rgb(149, 198, 224);
     margin-top: 40px;
 }
 .square-top{
-    flex: 2;
+    flex: 3;
     background: rgb(149, 198, 224);
 }
 
 .images-1{
-    flex: 2.2;
+    flex: 3.8;
     background-image: url(images/home_page/1.jpg);
     background-size: 100%;
 }
 
 .images-2{
-    flex: 2.6;
+    flex: 4.5;
     background-image: url(images/home_page/2.jpg);
     background-size: 100%;
     margin-top: 40px;
 }
 
 .images-3{
-    flex: 2.7;
+    flex: 4.5;
     background-image: url(images/home_page/3.jpg);
     background-size: 100%;
     margin-top: 40px;
 }
 
 .images-4{
-    flex: 2.6;
+    flex: 4;
     background-image: url(images/home_page/4.jpg);
     background-size: 100%;
     margin-top: 40px;
 }
 
 .images-5{
-    flex: 2.7;
+    flex: 4.8;
     background-image: url(images/home_page/5.jpg);
     background-size: 100%;
     margin-top: 40px;
@@ -166,15 +165,20 @@ a{
     flex-direction: row;
 }
 .bottom-text-mid{
-    flex: 2;
-  
+    flex: 3;
     margin-right: 10%;
+    padding-left: 8%;
 }
 
 .bottom-text{
-    flex: 1;
-    margin-right: 10%;
+    flex: 3;
+    margin-right: 5%;
+    padding-left: 55px;
+}
 
+.bottom-text2{
+    flex: 2;
+    padding-left: 30px;
 }
 
 .row{
@@ -194,7 +198,6 @@ a{
 .map-name{
     text-align: center;
     font-size: 22px;
-    
     background-color: rgb(149, 198, 224);
     padding-top: 15px;
     padding-bottom: 16px;
@@ -207,8 +210,8 @@ a{
     font-size: 12px;
     width: 100%;
     background: rgb(255, 255, 255);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .inf-text{
