@@ -5,23 +5,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Памагити</title>
-  <link rel="stylesheet" href="css/home-style.css">
+  <link rel="stylesheet" type="text/css" href="css/home-style-small.css" id="scale-link">
+  <!--<link rel="stylesheet" type="text/css" href="css/home-style-normal.css" id="scale-link" name="tete">-->
+  
   <link rel="stylesheet" href="css/button-style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==";
     crossorigin=""/>
-
+  <!--<script src="/css/resize.js"></script> Скрипт для ресайза-->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js";
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==";
-   crossorigin=""></script>
-  
+   crossorigin="">
+  </script>
+
+
+
 </head>
 
 <body>
   <div class = "box-top">
     <div class = "transp-back">
-      <div class = "image-kras"></div>
-      <div class = "text-block-top">
+      <img src = "css/images/home_page/Krasnoyarsk.png" class = "image-kras">
+      <div class = "text-block">
         <div class = "top-text1">КРАСНОЯРСК</div>
         <div class = "top-text2">ИСОГД</div>
       </div>
@@ -37,60 +42,46 @@
   <div>
     <div class="block">
       <div class = "buttons-layout">
-        <div class = "button-row">
+        <div class = "button-row-top">
           <div class = "square-top"></div>
           <div class = "images-1"></div>
-          <button class = "link-first" value = "http://www.admkrsk.ru/city/Pages/default.aspx" onclick="openPage(value)"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; О городе</a></button>
-        </div>
-        <div class = "button-row"> 
-          <div class = "square"></div>
-          <div class = "images-2"></div>
-          <button class = "link" value = "https://newslab.ru/" onclick="openPage(value)"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; Новости</a></button>
-        </div>
-        <div class = "button-row">
-          <div class = "square"></div>
-          <div class = "images-3"></div>
-          <button class = "link" value = "http://www.admkrsk.ru/photoarchive/Pages/default.aspx" onclick="openPage(value)"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; Фотогалерея</a></button>
-        </div>
-        <div class = "button-row">
-          <div class = "square"></div>
-          <div class = "images-4"></div>
-          <button class = "link value" value = "http://www.admkrsk.ru/citytoday/building/Pages/default.aspx" onclick="openPage(value)"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; Документы</a></button>
-        </div>
-        <div class = "button-row">
-          <div class = "square"></div>
-          <div class = "images-5"></div>
-          <button class = "link" value = "https://www.reformagkh.ru/opendata?gid=2211647&cids=house_management&page=1&pageSize=10" onclick="openPage(value)"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; Реестр домов</a></button>
-        </div>
-      </div>
-
-      <div class = "info-text-layout">
-        <div class = "button-row">
+          <button class = "link-first" value = "http://www.admkrsk.ru/city/Pages/default.aspx" onclick="openPage(value)"><a href="#"><!--&nbsp;&nbsp;&nbsp;&nbsp;--> О городе</a></button>
           <div class = "inf-text-top">
             (краткая информация,  история развития и др.)
           </div>
         </div>
-        <div class = "button-row">
+        <div class = "button-row"> 
+          <div class = "square"></div>
+          <div class = "images-2"></div>
+          <button class = "link" value = "https://newslab.ru/" onclick="openPage(value)"><a href="#"><!--&nbsp;&nbsp;&nbsp;&nbsp;--> Новости</a></button>
           <div class = "inf-text">
             (городские события, важная инфорация и др.)
           </div>
         </div>
         <div class = "button-row">
+          <div class = "square"></div>
+          <div class = "images-3"></div>
+          <button class = "link" value = "http://www.admkrsk.ru/photoarchive/Pages/default.aspx" onclick="openPage(value)"><a href="#"><!--&nbsp;&nbsp;&nbsp;&nbsp;--> Фотогалерея</a></button>
           <div class = "inf-text">
             (фотоархив)
           </div>
         </div>
         <div class = "button-row">
+          <div class = "square"></div>
+          <div class = "images-4"></div>
+          <button class = "link value" value = "http://www.admkrsk.ru/citytoday/building/Pages/default.aspx" onclick="openPage(value)"><a href="#"><!--&nbsp;&nbsp;&nbsp;&nbsp;--> Документы</a></button>
           <div class = "inf-text">
             (градостроительная документация)
           </div>
         </div>
         <div class = "button-row">
+          <div class = "square"></div>
+          <div class = "images-5"></div>
+          <button class = "link" value = "https://www.reformagkh.ru/opendata?gid=2211647&cids=house_management&page=1&pageSize=10" onclick="openPage(value)"><a href="#"><!--&nbsp;&nbsp;&nbsp;&nbsp;--> Реестр домов</a></button>
           <div class = "inf-text">
             (реестр домов, реестр упр. организаций)
           </div>
         </div>
-        
       </div>
 
       <div class = "square-box">
@@ -98,7 +89,9 @@
           <a href="mainMap.html" target="_blank">Интерактивная карта</a>
         </div>
         <div>
-          <button class = "map-button" value = "mainMap.html" onclick="openPage(value)"></button>
+          <button class = "map-button" value = "mainMap.html" onclick="openPage(value)">
+            <img class = "Map-img" src = "css/images/home_page/karta3.jpg"></img>
+          </button>
         </div>
         
       </div>
@@ -118,7 +111,7 @@
           <div class = "bot-link2"><a href="https://newslab.ru/" target="_blank">Новости</a></div>
           <div class = "bot-link"><a href="http://www.admkrsk.ru/photoarchive/Pages/default.aspx" target="_blank">Фотогалерея</a></div>
         </div>
-        <div class="row">
+        <div class="row2">
           <div class = "bot-link"><a href="mainMap.html" target="_blank">Интерактивная карта</a></div>
           <div class = "bot-link2"><a href="http://www.admkrsk.ru/citytoday/building/Pages/default.aspx" target="_blank">Документы</a></div>
           <div class = "bot-link2"><a href="https://www.reformagkh.ru/opendata?gid=2211647&cids=house_management&page=1&pageSize=10" target="_blank">Реестр домов</a></div>
@@ -144,6 +137,150 @@
     window.open(value, '_blank');
     window.focus();
   }
+</script>
+
+<script>
+  var link = document.getElementById("scale-link");
+  var curent = "";
+  window.addEventListener("resize", AutoScale);
+
+  AutoScale();
+  
+  function AutoScale(){
+    let width = window.innerWidth; //Ширина окна
+    console.log(width);
+    if (width > 1280)
+    {
+      console.log("Hello1");
+      ChangeScale("big", width);
+    }
+    else if (width > 960 && width <= 1280) 
+    {
+      console.log("Hello2");
+      ChangeScale("normal", width);
+    }
+    else if (width <= 960) 
+    {
+      console.log("Hello3");
+      ChangeScale("small", width);
+    }
+  }
+
+  function ChangeScale(size, width)
+  {
+    if (curent != size){
+      link.setAttribute("href", "css/home-style-" + size + ".css");
+      curent = size;
+    }
+    var style = document.documentElement.style;
+    style.setProperty('--margin-top', CalculateNewMargin(width));
+    style.setProperty('--padding', CalculateNewPadding(width, size));
+    style.setProperty('--flex-value', CalculateNewFlex(width, size));
+    style.setProperty('--padding-head', CalculateNewPaddingHead(width, size));
+    style.setProperty('--font-size', CalculateNewFontSize(size,  width));
+    style.setProperty('--image-flex-value', ClaculateNewImageFlex(width));
+    style.setProperty('--map-height', CalculateMapHeight(width));
+    style.setProperty('--image-kras-width', CalculateImageKrasWidth(width));
+  }
+
+  function CalculateNewMargin(curentWidth)
+  {
+    var margin = curentWidth/100*(2.1-(1920-curentWidth)/1500);
+    margin+="px";
+    console.log("New Margin: ", margin);
+    return margin;
+  }
+
+  function CalculateNewPadding(curentWidth, size)
+  {
+    if (size == "small")
+    {
+      var padding = curentWidth/100*1.6;
+    }
+    else 
+    {
+      var padding = curentWidth/100*1.2;
+    }
+    padding += "px";
+    console.log("Padding: ", padding);
+    return padding;
+  }
+
+  function CalculateNewFlex(curentWidth, size)
+  {
+    if (size == "big")
+    {
+      var flex = 23040/curentWidth*1.5;
+    }
+    if (size == "normal")
+    {
+      var flex = 15360/curentWidth*2;
+    }
+    if (size == "small")
+    {
+      var flex = 11520/curentWidth*2;
+    }
+    
+    console.log("Flex value: ", flex);
+    return flex;
+  }
+
+  function ClaculateNewImageFlex (curentWidth) 
+  {
+    var flex = 5120/curentWidth;
+    return flex;
+  }
+
+  function CalculateNewPaddingHead(curentWidth, size)
+  {
+    if (size == "big")
+    {
+      var padding = curentWidth/100*(16-(1920-curentWidth)/100);
+      padding += "px";
+      console.log("Padding2: ", padding);
+      return padding;
+    }
+    if (size == "normal")
+    {
+      var padding = curentWidth/100*(12-(1280-curentWidth)/100);
+      padding += "px";
+      console.log("Padding2: ", padding);
+      return padding;
+    }
+  }
+
+  function CalculateNewFontSize(size, width)
+  {
+    if (size == "big")
+    {
+      return "22px";
+    }
+    if (size == "normal")
+    {
+      if (width < 1060) {return "14px";}
+      else {return "18px";}
+    }
+    if (size == "small")
+    {
+      return "14px";
+    }
+
+  }
+
+  function CalculateMapHeight(width) 
+  {
+    var height = width/4.26;
+    height += "px" 
+    return height;
+  }
+
+  function CalculateImageKrasWidth(width)
+  {
+    var w = 9600/width;
+    w += "%";
+    return w;
+  }
+
 </script>
 
 </html>

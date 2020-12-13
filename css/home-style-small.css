@@ -1,0 +1,277 @@
+:root{
+   --margin-top: 40px;
+   --padding: 16px;
+   --flex-value: 12;
+   --padding-head: 240px;
+   --image-flex-value: 4;
+   --map-height: 235;
+   --font-size:  18px;
+   --image-kras-width: 10%;
+} 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.6em;
+
+  background: rgb(228, 228, 228);
+  max-width: 1920px;
+
+}  
+
+.box-top{
+  background-image: url(images/home_page/shapka.jpg);
+  background-size: 100%;
+
+  padding-bottom: var(--padding-head);  
+  display: flex;
+}
+
+.transp-back{
+  width: 45%;
+  padding-bottom: 1%;
+  background: linear-gradient(90deg,rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%);
+  display: flex;
+  flex-direction: row;
+}
+
+
+.image-kras{
+  width: var(--image-kras-width);
+  /*(background-image: url(images/home_page/Krasnoyarsk.png);*/
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 7%;
+}
+
+.text-block{
+  height: 100%;
+}
+
+.top-text1{
+  margin-top: 20%;
+  font-size: 14px;
+}
+
+.top-text2{
+  font-size: 10px;
+
+}
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.search-bar{
+  flex: 4;
+
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(149, 198, 224);
+  width: 100%;
+  font-size: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+
+}
+
+.button-row{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: var(--margin-top);
+}
+
+.button-row-top{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.map-button{
+  width: 100%;
+}
+  .Map-img{
+      width: 100%;
+      height: var(--map-height);
+  }
+
+.map-button:hover{
+  cursor: pointer;
+}
+
+.buttons-layout{
+  flex: 3;
+  box-sizing: border-box;
+  width: 100% ;
+  margin-right: 2%;
+}
+
+.info-text-layout{
+  flex: 1;
+  margin-right: 2%;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+.block{
+  margin-top: 1.5%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-right: 5%;
+  background-color: rgb(228, 228, 228);
+}
+
+.square{
+  flex: 3;
+  background: rgb(149, 198, 224);
+  /*margin-top: var(--margin-top);*/
+}
+.square-top{
+  flex: 3;
+  background: rgb(149, 198, 224);
+}
+
+.images-1{
+  flex: var(--image-flex-value);
+  background: url(images/home_page/1.jpg) no-repeat;
+  background-size: 100%;
+  margin-right: var(--margin-top);
+  display: none;
+}
+
+.images-2{
+  flex: var(--image-flex-value);
+  background: url(images/home_page/2.jpg) no-repeat;
+  background-size: 100%;
+  /*margin-top: var(--margin-top);*/
+  margin-right: var(--margin-top);
+  display: none;
+}
+
+.images-3{
+  flex: var(--image-flex-value);;
+  background: url(images/home_page/3.jpg) no-repeat;
+  background-size: 100%;
+  /*margin-top: var(--margin-top);*/
+  margin-right: var(--margin-top);
+  display: none;
+}
+
+.images-4{
+  flex: var(--image-flex-value);;
+  background: url(images/home_page/4.jpg) no-repeat;
+  background-size: 100%;
+  /*margin-top: var(--margin-top);*/
+  margin-right: var(--margin-top);
+  display: none;
+}
+
+.images-5{
+  flex: var(--image-flex-value);
+  background: url(images/home_page/5.jpg) no-repeat;
+  background-size: 100%;
+  /*margin-top: var(--margin-top);*/
+  margin-right: var(--margin-top);
+  display: none;
+}
+
+.square-box{
+  flex: 3;
+}
+
+.bottom-block{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 12px;
+  background: rgb(149, 198, 224);
+  margin-top: 1.5%;
+}
+.bottom-paragraph{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.bottom-text-mid{
+  flex: 3;
+  /*margin-right: 4%;*/
+  padding-left: 8%;
+  display: none;
+}
+
+.bottom-text{
+  flex: 3;
+  margin-right: 2%;
+  padding-left: 40px;
+}
+
+.bottom-text2{
+  flex: 2;
+  padding-left: 30px;
+}
+
+.row{
+  flex: 0.7;
+
+}
+
+.row2{
+  flex: 1.5;
+
+}
+
+.bot-link{
+  flex: 1;
+  margin-right: 10px;
+}
+
+.bot-link2{
+  flex: 4;
+}
+
+.map-name{
+  text-align: center;
+  font-size: var(--font-size);
+  background-color: rgb(149, 198, 224);
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.inf-text-top{
+  flex: var(--flex-value);
+  text-decoration: none;
+  font-size: 10px;
+  width: 100%;
+  /*background: rgb(255, 255, 255);*/
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  display: none;
+  /*margin-left:10px;*/
+}
+
+.inf-text{
+  flex: var(--flex-value);
+  text-decoration: none;
+  font-size: 10px;
+  width: 100%;
+  /*background: rgb(255, 255, 255);*/
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  /*margin-top: var(--margin-top);*/
+  display: none;
+}
+
+
+
+
